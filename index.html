@@ -5,9 +5,10 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="ป้ายไทย">
+<meta name="apple-mobile-web-app-title" content="Japanese Cards">
 <meta name="theme-color" content="#1c1b1f">
-<title>ป้ายไทย — タイ語学習</title>
+<link rel="apple-touch-icon" href="icon.png">
+<title>Japanese Pocket Cards</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;600;700&family=Noto+Sans+Thai:wght@400;700&family=Sriracha&family=Zen+Maru+Gothic:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -228,8 +229,7 @@ footer{text-align:center;padding:6px 0 2px;}
   <footer>
     <button class="reset-btn" id="resetBtn">รีเซ็ตบันทึกการเรียน</button>
     <div style="margin-top:8px;display:flex;gap:6px;justify-content:center;flex-wrap:wrap;">
-      <button class="reset-btn" id="exportBtn" style="color:#4a7cc4;">📤 ส่งออกข้อมูล</button>
-      <button class="reset-btn" id="importBtn" style="color:#4c9a6a;">📥 นำเข้าข้อมูล</button>
+
     </div>
     <div class="audio-note">🔊 หากไม่มีเสียง ไปที่ Settings › Accessibility › Spoken Content → เพิ่มภาษาไทย</div>
   </footer>
@@ -2622,8 +2622,6 @@ function importData(){
   }
 }
 
-document.getElementById('exportBtn').addEventListener('click', exportData);
-document.getElementById('importBtn').addEventListener('click', importData);
 
 document.getElementById('backBtn').addEventListener('click',function(){
   const scrollToId=st.fromListItemId;
